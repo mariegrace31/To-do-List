@@ -5,8 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open",
-    "build": "webpack"
+    "start": "webpack-dev-server --mode production --open",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -22,4 +22,5 @@
   "dependencies": {
     "lodash": "^4.17.21"
   }
+
 }
