@@ -1,6 +1,6 @@
 :root {
-  --primary: #f8dbb5;
-  --secondary: #f0b879;
+  --primary: #f1acd4;
+  --secondary: #daaec8;
 }
 
 html,
@@ -31,7 +31,7 @@ body {
 }
 
 .container > * {
-  border-bottom: 1px solid #da810d;
+  border-bottom: 1px solid #d11f87;
   padding: 0.7em;
 }
 
@@ -43,8 +43,8 @@ body {
 }
 
 .title-section h1 {
-  font-size: 25px;
-  color: #da810d;
+  font-size: 35px;
+  color: #d11f87;
 }
 
 input {
@@ -69,8 +69,8 @@ input {
   position: absolute;
   top: 0;
   left: 1rem;
-  font-size: 16px;
-  color: #555;
+  font-size: 18px;
+  color: #3f1d31;
   pointer-events: none;
   transition: 0.2s ease-out;
 }
@@ -78,8 +78,8 @@ input {
 .input-field input:focus ~ label {
   top: -20px;
   left: 2px;
-  color: #777;
-  font-size: 14px;
+  color: #3f1d31;
+  font-size: 16px;
 }
 
 #addBtn {
@@ -105,7 +105,7 @@ input {
   align-items: center;
   gap: 0.7em;
   padding: 0.5em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #d11f87;
 }
 
 .todo-list {
@@ -118,9 +118,8 @@ input {
 }
 
 .clear-completed:hover {
-  background: rgb(2, 0, 36);
-  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 88%);
-  color: #f1eaea;
+  background-color: #d11f87 ;
+  color: #fff;
 }
 
 .task i {
