@@ -1,5 +1,5 @@
 :root {
-  --primary: #eed2e2;
+  --primary: #ece8ebf5;
   --secondary: #daaec8;
 }
 
@@ -28,12 +28,12 @@ body {
   width: 50%;
   padding-top: 25px;
   justify-content: center;
-  background-color: #f1acd4;
+  background-color: #fff;
   box-shadow: 1px 1px 6px #3f1d31;
 }
 
 .container > * {
-  border-bottom: 1px solid #d11f87;
+  border-bottom: 2px solid #ddd;
   padding: 0.7em;
 }
 
@@ -46,14 +46,14 @@ body {
 
 .title-section h1 {
   font-size: 35px;
-  color: #d11f87;
+  color: #292929;
 }
 
 input {
   border-color: transparent;
   padding: 0.6em;
   outline: none;
-  background-color: #f1acd4;
+  background-color: #fff;
   font-size: 20px;
 }
 
@@ -83,7 +83,7 @@ input {
 .input-field input:focus ~ label {
   top: -20px;
   left: 2px;
-  color: #3f1d31;
+  color: #292929;
   font-size: 16px;
 }
 
@@ -110,7 +110,7 @@ input {
   align-items: center;
   gap: 0.7em;
   padding: 0.5em;
-  border-bottom: 1px solid #d11f87;
+  border-bottom: 2px solid #ddd;
 }
 
 .todo-list {
@@ -120,12 +120,12 @@ input {
 .clear-completed {
   width: 100%;
   padding: 0.9em;
-  background-color: #eed2e2;
+  background-color: #ece8ebf5;
   margin-top: -15px;
 }
 
 .clear-completed:hover {
-  color: #d11f87;
+  color: #3c3cf0;
 }
 
 .task i {
