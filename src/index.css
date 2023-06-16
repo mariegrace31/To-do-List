@@ -1,5 +1,5 @@
 :root {
-  --primary: #f1acd4;
+  --primary: #eed2e2;
   --secondary: #daaec8;
 }
 
@@ -28,6 +28,8 @@ body {
   width: 50%;
   padding-top: 25px;
   justify-content: center;
+  background-color: #f1acd4;
+  box-shadow: 1px 1px 6px #3f1d31;
 }
 
 .container > * {
@@ -49,19 +51,22 @@ body {
 
 input {
   border-color: transparent;
-  padding: 0.7em;
+  padding: 0.6em;
   outline: none;
+  background-color: #f1acd4;
+  font-size: 20px;
 }
 
 .input-task {
   width: 90%;
   position: relative;
+  padding: 5px;
 }
 
 .input-field {
   position: relative;
-  margin: 1em 0;
   display: flex;
+  padding: 4px;
   align-items: center;
 }
 
@@ -114,12 +119,13 @@ input {
 
 .clear-completed {
   width: 100%;
-  padding: 0.5em;
+  padding: 0.9em;
+  background-color: #eed2e2;
+  margin-top: -15px;
 }
 
 .clear-completed:hover {
-  background-color: #d11f87;
-  color: #fff;
+  color: #d11f87;
 }
 
 .task i {
