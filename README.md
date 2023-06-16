@@ -135,9 +135,7 @@ npx eslint .
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- **[ Add and remove features ]**
-- **[ Interactive list ]**
-- **[ live demo ]**
+- **[ Drag and drop ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

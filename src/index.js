@@ -1,10 +1,14 @@
 import './index.css';
 import {
-  tasks, storeTasksToLocalStorage, deleteTask, editTask, addTask,
+  tasks, storeTasksToLocalStorage, deleteTask, editTask, addTask, sortTasks,
 } from './module/taskFunctions.js';
+
+import updateStatus from './module/statusFunctions.js';
+import clearAllCompletedTasks from './module/clearTask.js';
 
 const todoListContainer = document.getElementById('todoList');
 const addBtn = document.getElementById('addBtn');
+const clearBtn = document.querySelector('.clear-completed');
 
 const displayTasks = () => {
   todoListContainer.textContent = '';
@@ -37,7 +41,7 @@ const displayTasks = () => {
         const foundTask = tasks.find((task) => task.description === inputText.value);
         if (foundTask) {
           foundTask.completed = currentState;
-          storeTasksToLocalStorage();
+          updateStatus(tasks.indexOf(foundTask), currentState);
         }
       }
 
@@ -81,6 +85,13 @@ const refreshPage = () => {
   localStorage.removeItem('Tasks');
   window.location.reload();
 };
+
+clearBtn.addEventListener('click', () => {
+  clearAllCompletedTasks();
+  sortTasks();
+  storeTasksToLocalStorage();
+  displayTasks();
+});
 
 initializeTasks();
 addBtn.addEventListener('click', () => {
