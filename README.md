@@ -23,6 +23,7 @@
     - [Usage](#usage)
     - [Run tests](#run-tests)
   - [👥 Author ](#-author-)
+  - [Live Demo ](#live-demo-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -127,6 +128,15 @@ npx eslint .
 
 - GitHub: [@mariegrace31](https://github.com/mariegrace31)
 - LinkedIn: [Marie Grâce Bahati](https://www.linkedin.com/in/marie-gr%C3%A2ce-bahati-546765224/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## Live Demo <a name="Live-demo"></a>
+
+
+- Here is the live demo link: <a href=" https://mariegrace31.github.io/To-do-List/">Live demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
