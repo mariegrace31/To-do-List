@@ -35,5 +35,5 @@ const addTask = (taskDescription) => {
 };
 
 export {
-  tasks, storeTasksToLocalStorage, deleteTask, editTask, addTask,
+  tasks, storeTasksToLocalStorage, deleteTask, editTask, addTask, sortTasks,
 };
