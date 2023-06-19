@@ -11,9 +11,13 @@ body {
   font-family: 'Kalam', cursive;
 }
 
-body {
+body,
+.container {
   display: flex;
   justify-content: center;
+}
+
+body {
   align-items: center;
   min-height: 100vh;
 }
@@ -23,11 +27,9 @@ body {
 }
 
 .container {
-  display: flex;
   flex-direction: column;
   width: 50%;
   padding-top: 25px;
-  justify-content: center;
   background-color: #fff;
   box-shadow: 1px 1px 6px #3f1d31;
 }
