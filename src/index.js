@@ -1,6 +1,11 @@
 import './index.css';
 import {
-  tasks, storeTasksToLocalStorage, deleteTask, editTask, addTask, sortTasks,
+  tasks,
+  storeTasksToLocalStorage,
+  deleteTask,
+  editTask,
+  addTask,
+  sortTasks,
 } from './module/taskFunctions.js';
 
 import updateStatus from './module/statusFunctions.js';
@@ -16,7 +21,9 @@ const displayTasks = () => {
     todoListContainer.innerHTML += `
       <li class="task" draggable="true" data-index="${index}">
         <div class="checkbox-container">
-          <input type="checkbox" name="${task.description}" ${task.completed ? 'checked' : ''}>
+          <input type="checkbox" name="${task.description}" ${
+      task.completed ? 'checked' : ''
+    }>
           <input type="text" value="${task.description}" readonly>
         </div>
         <i class="fas fa-ellipsis-vertical" data-index="${index}"></i>
@@ -26,7 +33,9 @@ const displayTasks = () => {
 
   const addedTasks = document.querySelectorAll('.task');
 
-  const checkboxContainers = document.querySelectorAll('.task > .checkbox-container > input[type="checkbox"]');
+  const checkboxContainers = document.querySelectorAll(
+    '.task > .checkbox-container > input[type="checkbox"]'
+  );
 
   checkboxContainers.forEach((checkbox) => {
     const inputText = checkbox.nextElementSibling;
@@ -38,7 +47,9 @@ const displayTasks = () => {
       const currentState = event.target.checked;
 
       if (currentState !== previousState) {
-        const foundTask = tasks.find((task) => task.description === inputText.value);
+        const foundTask = tasks.find(
+          (task) => task.description === inputText.value
+        );
         if (foundTask) {
           foundTask.completed = currentState;
           updateStatus(tasks.indexOf(foundTask), currentState);
@@ -118,6 +129,8 @@ document.addEventListener('keypress', (e) => {
     }
   }
 });
-document.querySelector('.fa-arrows-rotate').addEventListener('click', refreshPage);
+document
+  .querySelector('.fa-arrows-rotate')
+  .addEventListener('click', refreshPage);
 
 export {};
