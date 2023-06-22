@@ -69,7 +69,7 @@ const displayTasks = () => {
         ellipsisIcon.classList.remove('fa-ellipsis-vertical');
         ellipsisIcon.classList.add('fa-trash');
         ellipsisIcon.addEventListener('click', () => {
-          deleteTask(index);
+          deleteTask(tasks,index);
           displayTasks();
         });
       } else {

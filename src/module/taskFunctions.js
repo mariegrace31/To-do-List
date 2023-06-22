@@ -10,7 +10,7 @@ const sortTasks = () => {
   });
 };
 
-const deleteTask = (index) => {
+const deleteTask = (tasks,index) => {
   tasks.splice(index, 1);
   tasks.forEach((task, newIndex) => {
     task.index = newIndex + 1;
