@@ -33,8 +33,7 @@ const displayTasks = () => {
   const addedTasks = document.querySelectorAll('.task');
 
   const checkboxContainers = document.querySelectorAll(
-    '.task > .checkbox-container > input[type="checkbox"]'
-  );
+    '.task > .checkbox-container > input[type="checkbox"]');
 
   checkboxContainers.forEach((checkbox) => {
     const inputText = checkbox.nextElementSibling;
@@ -47,8 +46,7 @@ const displayTasks = () => {
 
       if (currentState !== previousState) {
         const foundTask = tasks.find(
-          (task) => task.description === inputText.value
-        );
+          (task) => task.description === inputText.value);
         if (foundTask) {
           foundTask.completed = currentState;
           updateStatus(tasks.indexOf(foundTask), currentState);
