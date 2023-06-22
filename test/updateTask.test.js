@@ -2,7 +2,7 @@ import { updateStatus } from '../src/module/statusFunctions';
 
 describe('updateStatus', () => {
   test('should update the completed status of a task at the specified index', () => {
-    let tasks = [
+    const tasks = [
       { description: 'Task1', completed: true },
       { description: 'Task2', completed: true },
     ];
