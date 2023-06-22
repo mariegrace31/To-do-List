@@ -1,5 +1,3 @@
-import { clearAllCompletedTasks } from '../src/module/clearTask';
-
 describe('clearAllCompleted', () => {
   const tasks = [
     { description: 'Task1', completed: false },
