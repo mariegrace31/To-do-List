@@ -19,7 +19,7 @@ const deleteTask = (tasks, index) => {
   storeTasksToLocalStorage();
 };
 
-const editTask = (description, index) => {
+const editTask = (tasks, description, index) => {
   tasks[index].description = description;
   storeTasksToLocalStorage();
 };
