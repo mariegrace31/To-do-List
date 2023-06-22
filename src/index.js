@@ -21,8 +21,7 @@ const displayTasks = () => {
     todoListContainer.innerHTML += `
       <li class="task" draggable="true" data-index="${index}">
         <div class="checkbox-container">
-          <input type="checkbox" name="${task.description}" ${
-      task.completed ? 'checked' : ''
+          <input type="checkbox" name="${task.description}" $( task.completed ? 'checked' : ''
     }>
           <input type="text" value="${task.description}" readonly>
         </div>
