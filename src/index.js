@@ -32,8 +32,7 @@ const displayTasks = () => {
 
   const addedTasks = document.querySelectorAll('.task');
 
-  const checkboxContainers = document.querySelectorAll(
-    '.task > .checkbox-container > input[type="checkbox"]'
+  const checkboxContainers = document.querySelectorAll('.task > .checkbox-container > input[type="checkbox"]'
   );
 
   checkboxContainers.forEach((checkbox) => {
@@ -68,7 +67,7 @@ const displayTasks = () => {
         ellipsisIcon.classList.remove('fa-ellipsis-vertical');
         ellipsisIcon.classList.add('fa-trash');
         ellipsisIcon.addEventListener('click', () => {
-          deleteTask(tasks,index);
+          deleteTask(tasks, index);
           displayTasks();
         });
       } else {
