@@ -10,7 +10,7 @@ const sortTasks = () => {
   });
 };
 
-const deleteTask = (index) => {
+const deleteTask = (tasks, index) => {
   tasks.splice(index, 1);
   tasks.forEach((task, newIndex) => {
     task.index = newIndex + 1;
@@ -24,7 +24,7 @@ const editTask = (description, index) => {
   storeTasksToLocalStorage();
 };
 
-const addTask = (taskDescription) => {
+const addTask = (taskDescription, tasks) => {
   const newTask = {
     description: taskDescription,
     completed: false,
@@ -35,5 +35,10 @@ const addTask = (taskDescription) => {
 };
 
 export {
-  tasks, storeTasksToLocalStorage, deleteTask, editTask, addTask, sortTasks,
+  tasks,
+  storeTasksToLocalStorage,
+  deleteTask,
+  editTask,
+  addTask,
+  sortTasks,
 };

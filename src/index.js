@@ -1,6 +1,11 @@
 import './index.css';
 import {
-  tasks, storeTasksToLocalStorage, deleteTask, editTask, addTask, sortTasks,
+  tasks,
+  storeTasksToLocalStorage,
+  deleteTask,
+  editTask,
+  addTask,
+  sortTasks,
 } from './module/taskFunctions.js';
 
 import updateStatus from './module/statusFunctions.js';
@@ -16,7 +21,8 @@ const displayTasks = () => {
     todoListContainer.innerHTML += `
       <li class="task" draggable="true" data-index="${index}">
         <div class="checkbox-container">
-          <input type="checkbox" name="${task.description}" ${task.completed ? 'checked' : ''}>
+          <input type="checkbox" name="${task.description}" $( task.completed ? 'checked' : ''
+    }>
           <input type="text" value="${task.description}" readonly>
         </div>
         <i class="fas fa-ellipsis-vertical" data-index="${index}"></i>
@@ -38,7 +44,9 @@ const displayTasks = () => {
       const currentState = event.target.checked;
 
       if (currentState !== previousState) {
-        const foundTask = tasks.find((task) => task.description === inputText.value);
+        const foundTask = tasks.find(
+          (task) => task.description === inputText.value,
+        );
         if (foundTask) {
           foundTask.completed = currentState;
           updateStatus(tasks.indexOf(foundTask), currentState);
@@ -58,7 +66,7 @@ const displayTasks = () => {
         ellipsisIcon.classList.remove('fa-ellipsis-vertical');
         ellipsisIcon.classList.add('fa-trash');
         ellipsisIcon.addEventListener('click', () => {
-          deleteTask(index);
+          deleteTask(tasks, index);
           displayTasks();
         });
       } else {
@@ -100,7 +108,7 @@ addBtn.addEventListener('click', () => {
 
   // Check if the task description is not empty
   if (taskDescription !== '') {
-    addTask(taskDescription);
+    addTask(taskDescription, tasks);
     inputField.value = '';
     displayTasks();
   }
@@ -118,6 +126,8 @@ document.addEventListener('keypress', (e) => {
     }
   }
 });
-document.querySelector('.fa-arrows-rotate').addEventListener('click', refreshPage);
+document
+  .querySelector('.fa-arrows-rotate')
+  .addEventListener('click', refreshPage);
 
 export {};
