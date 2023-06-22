@@ -33,7 +33,7 @@ const displayTasks = () => {
   const addedTasks = document.querySelectorAll('.task');
 
   const checkboxContainers = document.querySelectorAll(
-    '.task > .checkbox-container > input[type="checkbox"]'
+    '.task > .checkbox-container > input[type="checkbox"]',
   );
 
   checkboxContainers.forEach((checkbox) => {
