@@ -45,7 +45,7 @@ const displayTasks = () => {
 
       if (currentState !== previousState) {
         const foundTask = tasks.find(
-          (task) => task.description === inputText.value
+          (task) => task.description === inputText.value,
         );
         if (foundTask) {
           foundTask.completed = currentState;
