@@ -24,7 +24,7 @@ const editTask = (description, index) => {
   storeTasksToLocalStorage();
 };
 
-const addTask = (taskDescription) => {
+const addTask = (taskDescription, tasks) => {
   const newTask = {
     description: taskDescription,
     completed: false,

@@ -8,10 +8,8 @@ describe('addTask', () => {
   ];
 
   test('add', () => {
-    const addTaskTo = { description: 'Task4', completed: false };
-    const newTask = addTask(tasks, addTaskTo);
-
-    expect(newTask).toHaveLength(4);
-    expect(newTask[3]).toEqual(addTask);
+    const newTask = [];
+    addTask('tasks', tasks);
+    expect(tasks.length).toBe(4);
   });
 });

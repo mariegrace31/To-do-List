@@ -111,7 +111,7 @@ addBtn.addEventListener('click', () => {
 
   // Check if the task description is not empty
   if (taskDescription !== '') {
-    addTask(taskDescription);
+    addTask(taskDescription, tasks);
     inputField.value = '';
     displayTasks();
   }
