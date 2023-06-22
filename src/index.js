@@ -34,7 +34,6 @@ const displayTasks = () => {
 
   const checkboxContainers = document.querySelectorAll('.task > .checkbox-container > input[type="checkbox"]');
 
-
   checkboxContainers.forEach((checkbox) => {
     const inputText = checkbox.nextElementSibling;
     let previousState = checkbox.checked;
