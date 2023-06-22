@@ -8,7 +8,6 @@ describe('addTask', () => {
   ];
 
   test('add', () => {
-    const newTask = [];
     addTask('tasks', tasks);
     expect(tasks.length).toBe(4);
   });
