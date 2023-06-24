@@ -136,7 +136,7 @@ npx eslint .
 ## Live Demo <a name="Live-demo"></a>
 
 
-- Here is the live demo link: <a href=" https://mariegrace31.github.io/To-do-List/dist/">Live demo</a>
+- Here is the live demo link: <a href= "https://mariegrace31.github.io/To-do-List/dist/">Live demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
